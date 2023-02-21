@@ -3,7 +3,7 @@ layout:       post
 title:        "Hello 2023"
 subtitle:     " \"Hello World, Hello Blog\""
 author:       "Dafenyuyu"
-header-img:   "img/post-bg-2015.jpg"
+header-style: text
 catalog:      true
 tags:
     - 博客诞生
