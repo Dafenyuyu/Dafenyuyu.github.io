@@ -1,15 +1,15 @@
 ---
 layout:       post
 title:        "Hello 2023"
-subtitle:     " \"Hello World, Hello Blog\""
+subtitle:     "Hello World, Hello Blog"
+date:         2023-02-21 21:48:00
 author:       "Dafenyuyu"
-header-style: text
-catalog:      true
+header-img:   "img/blog_01_2023.jpg"
 tags:
     - 博客诞生
 ---
 
-> “Yeah It’s on. ” Dafenyuyu的Blog就这么开通了
+//> “Yeah It’s on. ” Dafenyuyu的Blog就这么开通了
 
 写在前面
 ------
