@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Image to hack wechat -->
-<!-- <img src="/img/MyIcon.jpg" width="0" height="0"> -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
 <!-- Post Header -->
@@ -16,7 +16,7 @@ layout: default
 
     <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-10 col-lg-offset-0
                 col-md-10 col-md-offset-1
                 post-container">
 
@@ -48,7 +48,7 @@ layout: default
                 </ul>
                 <hr style="visibility: hidden;">
 
-<!--                 {% if site.disqus_username %}
+                {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
@@ -60,7 +60,15 @@ layout: default
                 <!-- 网易云跟帖 评论框 start -->
                 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
                 <!-- 网易云跟帖 评论框 end -->
-                {% endif %} -->
+                {% endif %}
+
+                {% if site.livere_uid %}
+                <!-- livere 评论框 start -->
+                <div class="comment">
+                    <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}"></div>
+                </div>
+                <!-- livere 评论框 end -->
+                {% endif %}
             </div>  
 
     <!-- Side Catalog Container -->
@@ -82,7 +90,7 @@ layout: default
 
     <!-- Sidebar Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-10 col-lg-offset-0
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
@@ -118,7 +126,7 @@ layout: default
 {% endif %}
 
 
-<!-- {% if site.disqus_username %}
+{% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -133,7 +141,23 @@ layout: default
     })();
 </script>
 <!-- disqus 公共JS代码 end -->
-{% endif %} -->
+{% endif %}
+
+
+{% if site.livere_uid %}
+<!-- livere 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+</script>
+<!-- livere 公共JS代码 end -->
+{% endif %}
 
 
 {% if site.anchorjs %}
