@@ -1,9 +1,8 @@
 ---
 layout: page
 title: "About"
-description: "「厚积薄发永远正确」"
+description: "「喵喵喵~」"
 header-img: "img/about-bg.jpg"
-header-mask: 0.3
 multilingual: true
 ---
 
@@ -22,8 +21,13 @@ multilingual: true
 </div>
 
 
-<!-- {% if site.disqus_username %} -->
+{% if site.disqus_username %}
 <!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
 <!-- disqus 评论框 end -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
@@ -33,11 +37,32 @@ multilingual: true
     var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
     var disqus_url = "{{site.url}}{{page.url}}";
 
-    (function () {
+    (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
 <!-- disqus 公共JS代码 end -->
+{% endif %}
+
+{% if site.livere_uid %}
+<!-- livere 评论框 start -->
+<div class="comment">
+    <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}"></div>
+</div>
+<!-- livere 评论框 end -->
+
+<!-- livere 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+</script>
+<!-- livere 公共JS代码 end -->
 {% endif %}
