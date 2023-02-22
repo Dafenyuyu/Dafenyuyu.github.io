@@ -2,10 +2,10 @@
 title: Dafenyuyu Blog
 SEOTitle: 达芬鱼鱼的博客 | Dafenyuyu Blog
 header-img: img/547020-1130893295.jpg
-email: huxpro@gmail.com
+email: 1747902112@qq.com
 description: "这里是达芬鱼鱼的blog，模板来自@Hux黄玄 大佬"
-# keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
-url: "https://huangxuan.me" # your host, for absolute URL
+# keyword: ""
+url: "https://dafenyuyu.github.io/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: Dafenyuyu
+# disqus_username: Dafenyuyu
 
 # Netease settings
 netease_comment: false
@@ -69,8 +69,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: dafenyuyu.github.io
+#ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
+#ga_domain: dafenyuyu.github.io
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
