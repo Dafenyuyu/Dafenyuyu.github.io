@@ -6,6 +6,6 @@
 
 Hey ，我是达芬鱼鱼（Dafenyuyu），一个渴望知识的青年。
 
-Goal：Technical Artist
+FLAG：Technical Artist
 
 希望可以通过这个blog来记录自己今后的奋斗路程，并结合自身经历分享一些有价值的内容
