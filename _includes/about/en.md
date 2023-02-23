@@ -6,6 +6,6 @@
 
 Hey, I'm Dafenyuyu, a young man eager for knowledge.
 
-Goal：Technical Artist
+FLAG：Technical Artist
 
 I hope that I can use this blog to record my future struggle and share some valuable content based on my own experience.
